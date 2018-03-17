@@ -1,0 +1,102 @@
+.background{
+
+  background-image: url("../assets/ocean.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
+.animatedIn {
+
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animatedUp {
+
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeUp {
+
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+}
+
+@-webkit-keyframes fadeUp {
+  100% {
+    top: 3%;
+    -webkit-transform: translate(-100px);
+    max-height: 100px !important;
+  }
+}
+
+@keyframes fadeUp {
+
+  100% {
+
+        top: 3%;
+        transform: translateX(-50%);
+
+  }
+}
+
+.logo {
+
+  height: 200px;
+}
+
+.centered{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px !important;
+  width: 631px;
+}
+
+.gauge{
+
+
+  margin-top: 250px;
+  opacity: 0;
+}
+
+.daily{
+
+  margin-top: 150px;
+  width: 700px !important;
+  height: 350px !important;
+  opacity: 0;
+}
+
+.monthly{
+
+  margin-top: 150px;
+  width: 350px !important;
+  height: 350px !important;
+  opacity: 0;
+}
